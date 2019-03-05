@@ -1,0 +1,39 @@
+Dono novoDono = new Dono();
+        Object[] opcoes = {"Cadastrar novo cliente","Efetuar entrega","Sair"};
+        int escolha;
+        do {
+            escolha = JOptionPane.showOptionDialog(null, "Escolha uma opção",
+                "Bem-vindo(a)", 0, 2, null, opcoes, opcoes[0]);
+            if(escolha != 0)break;
+            novoDono.setNome(JOptionPane.showInputDialog(null, "Insira o nome do primeiro gerente", "Configurando novo cliente. 1/3", 3));
+            novoDono.setTelefone(JOptionPane.showInputDialog(null, "Insira o telefone do cliente", "Configurando novo cliente. 3/3", 3));
+            if (novoDono.setDistancia(Double.parseDouble(JOptionPane.showInputDialog(null, "Insira a distância do cliente", "Configurando novo cliente. 2/3", 3)))) {
+                JOptionPane.showMessageDialog(null, "Cliente cadastrado com sucesso!", "Operação efetuada", 1);
+            }else{
+              JOptionPane.showMessageDialog(null, "Distância fora do limite.", "Não é possivel continuar.", 1);
+            }
+            Object[] opcoesCadastro = {"Cadastrar um pet","Finalizar cadastro"};
+            do {
+                escolha = JOptionPane.showOptionDialog(null, "Escolha uma opção",
+                    "Bem-vindo(a)", 0, 2, null, opcoesCadastro, opcoesCadastro[0]);
+                if (escolha != 0) break;
+                Pet novoPet = new Pet();
+                novoPet.setNome(JOptionPane.showInputDialog(null, "Insira o nome do pet", "Configurando novo pet. 1/3", 3));
+                novoPet.setRaca(JOptionPane.showInputDialog(null, "Insira a raça do pet", "Configurando novo pet. 2/3", 3));
+                novoPet.setIdade(Integer.parseInt(JOptionPane.showInputDialog(null, "Insira a idade do pet", "Configurando novo pet. 3/3", 3)));
+                novoPet.setDono(novoDono);
+            } while (true);
+        } while (true);
+        
+        if (escolha == 1) {
+            
+            
+            
+            Entrega entrega = new Entrega();
+            Object[] opcoesEntrega = {"Entregar","Avançar"};
+            for (int i = 0; i<5;i++) {
+                escolha = JOptionPane.showOptionDialog(null, "Nome",
+                    "Escolha uma opção", 0, 2, null, opcoesEntrega, opcoesEntrega[0]);
+            }
+            
+        }
