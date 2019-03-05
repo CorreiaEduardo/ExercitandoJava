@@ -1,0 +1,22 @@
+Classe: Porta Atributos: aberta, cor, dimensaoX, dimensaoY, dimensaoZ Métodos: void abre(),
+void fecha(), void pinta(String s), boolean estaAberta() Para testar, crie uma porta, abra e feche a
+mesma, pinte‐a de diversas cores, altere suas dimensões e use o método estaAberta para
+verificar se ela está aberta.
+
+• Classe: Casa Atributos: cor, e quantas portas ele queira inserir na casa Método: void pinta(String
+s), int quantasPortasEstaoAbertas(), int totalDePortas(), void cadastraPortas(Porta porta).
+
+• Para testar, crie uma casa, pinte‐a e cadastre as portas(sempre pergunte se ele deseja cadastrar
+mais portas através do JOptionPane, recebendo sim ou não). As portas cadastradas na ordem
+par, feche-as e as de ordem ímpar abra-as. Utilize o método quantasPortasEstaoAbertas para
+imprimir o número de portas abertas.
+
+• Classe: Edificio Atributos: cor, nome de cada andar quantos o usuário queira, e quantas portas
+ele queira inserir no edifício. Métodos: void pinta(String s), int quantasPortasEstaoAbertas(), void
+cadastraPortas (Porta p), int totalDePortas(), void adicionarAndar(), int totalDeAndares()
+ 
+Para testar, crie um edifício, pinte‐o. Crie seis portas e coloque‐as no edifício através do método
+adicionaPorta, abra e feche‐as como desejar. Utilize o método quantasPortasEstaoAbertas para
+imprimir o número de portas abertas e o método totalDePortas para imprimir o total de portas em
+seu edifício. Cria alguns andares utilizado o método adicionarAndar e retorne o número total de
+andares utilizando o método totalDeAndares.
